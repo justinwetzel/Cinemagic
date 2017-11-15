@@ -19,7 +19,7 @@ namespace MovieApp.Controllers
         private MovieAppContext db = new MovieAppContext();
 
         //Get Owned Movies
-        [Route("OwnedMoviess")]
+        [Route("OwnedMovies")]
         public List<Movie> GetMovies()
         {
             return db.Movie.Where(x => x.IsOwned == true && x.IsActive).ToList();
