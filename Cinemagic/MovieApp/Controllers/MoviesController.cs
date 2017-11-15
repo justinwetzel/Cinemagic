@@ -19,7 +19,7 @@ namespace MovieApp.Controllers
         private MovieAppContext db = new MovieAppContext();
 
         //Get Owned Movies
-        [Route("OwnedMovies")]
+        [Route("OwnedMoviess")]
         public List<Movie> GetMovies()
         {
             return db.Movie.Where(x => x.IsOwned == true && x.IsActive).ToList();
@@ -78,20 +78,6 @@ namespace MovieApp.Controllers
             db.Movie.Remove(deletedMovie);
             db.SaveChanges();
             return Ok();
-        }
-
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing)
-            {
-                db.Dispose();
-            }
-            base.Dispose(disposing);
-        }
-
-        private bool MovieExists(int id)
-        {
-            return db.Movie.Count(e => e.Id == id) > 0;
         }
     }
 }
