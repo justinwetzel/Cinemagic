@@ -1,0 +1,152 @@
+﻿body,
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: #720f0f;
+}
+
+ul {
+    overflow-y: auto;
+}
+
+.navbar {
+    float: none;
+    margin-bottom: 0px;
+}
+.navbar-container
+{
+    height: 15%;
+    width: 100%;
+}
+.navbar-header {
+    width: 100%;
+}
+
+.navbar-brand {
+    width: 100%;
+    text-align: center;
+    font-size: 20pt;
+}
+
+.owned-container {
+    height: 100%;
+    padding-top: 20px;
+    background-color: #720f0f;
+}
+
+.wanted-container {
+    height: 100%;
+    padding-top: 20px;
+    background-color: #720f0f;
+}
+
+.button-container {
+    height: 20%;
+    padding-top: 20px;
+    background-color: #720f0f;
+}
+
+.close-button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.btn {
+    margin: 0 auto;
+}
+
+.navbar-default .navbar-brand {
+    color: #c3bfb5;
+}
+        
+.submit-btn {
+    background-color: #222222;
+    border-color: #720F0F;
+    box-shadow: none;
+}
+
+.submit-btn:hover {
+    background-color: #720f0f;
+    box-shadow: none;
+}
+
+.add-btn {
+    background-color: #222222;
+    border: solid 2px;
+    border-color: #380808;
+    color: #ffffff;
+    box-shadow: none;
+}
+
+.add-btn:hover {
+    background-color: #380808;
+    border-color: #720f0f;
+    color: #ffffff;
+    box-shadow: none;
+}
+
+.secondary-btn:hover {
+    background-color: #720f0f;
+    color: #ffffff;
+}
+
+.owned-list {
+    width: 100%;
+    height: 80%;
+}
+
+.wanted-list {
+    width: 100%;
+    height: 80%;
+}
+
+.list-container {
+    height: 75%;
+}
+
+#myInput {
+    background-position: 10px 12px;
+    background-repeat: no-repeat;
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+}
+
+#ownedMovies{
+    width: 100%;
+    height: 100%;
+    padding-right: 0px;
+}
+
+#wantedMovies{
+    width: 100%;
+    height: 100%;
+    padding-right: 0px;
+}
+
+ul::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #222;
+}
+
+ul::-webkit-scrollbar
+{
+	width: 12px;
+    border-radius: 10px;
+	background-color: #222;
+}
+
+ul::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #383838;
+}
